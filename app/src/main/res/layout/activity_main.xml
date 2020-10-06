@@ -7,7 +7,6 @@
     tools:context=".MainActivity"
     android:background="@android:color/white">
 
-
     <RelativeLayout
         android:id="@+id/RecyclerView"
         android:layout_width="match_parent"
