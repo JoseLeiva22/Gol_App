@@ -41,7 +41,6 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
         return viewHolder;
     }
 
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.nombre.setText(ListaCanchas.get(position).getNombre());

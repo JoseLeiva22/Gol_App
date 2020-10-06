@@ -30,7 +30,6 @@ public class CanchasModelo {
         this.horario = horario;
     }
 
-
     public int getImgCancha() {
         return imgCancha;
     }
