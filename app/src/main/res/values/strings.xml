@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gol_proyect</string>
+    <string name="ImagenBotonUno">Ver</string>
+    <string name="tv1">Primer Activity</string>
+    <string name="BotonMapa">Mapa</string>
+    <string name="bv1">Tercer Activity</string>
+</resources>
