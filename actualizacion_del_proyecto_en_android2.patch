@@ -1,0 +1,113 @@
+Index: app/src/main/java/cl/stomas/gol_proyect/CanchasModelo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/cl/stomas/gol_proyect/CanchasModelo.java	(revision 078d7fc5d98535e0294d3f97a6dd831e3b7c7b91)
++++ app/src/main/java/cl/stomas/gol_proyect/CanchasModelo.java	(date 1601998011875)
+@@ -14,6 +14,7 @@
+         this.imgCancha = imgCancha;
+     }
+ 
++
+     public String getNombre() {
+         return nombre;
+     }
+Index: app/src/main/res/layout/layout_detalles.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/layout_detalles.xml	(revision 078d7fc5d98535e0294d3f97a6dd831e3b7c7b91)
++++ app/src/main/res/layout/layout_detalles.xml	(date 1601994886755)
+@@ -17,8 +17,8 @@
+ 
+         <ImageView
+             android:id="@+id/imageView"
+-            android:layout_width="339dp"
+-            android:layout_height="252dp"
++            android:layout_width="342dp"
++            android:layout_height="258dp"
+             android:layout_gravity="center|left|center_vertical"
+             android:layout_marginStart="16dp"
+             android:layout_marginLeft="16dp"
+Index: app/src/main/res/layout/activity_dos.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_dos.xml	(revision 078d7fc5d98535e0294d3f97a6dd831e3b7c7b91)
++++ app/src/main/res/layout/activity_dos.xml	(date 1601994886762)
+@@ -6,7 +6,7 @@
+ 
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
++        android:layout_height="744dp"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentEnd="true"
+@@ -14,5 +14,5 @@
+         android:layout_marginStart="10dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginEnd="11dp"
+-        android:layout_marginBottom="40dp" />
++        android:layout_marginBottom="53dp" />
+ </RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(revision 078d7fc5d98535e0294d3f97a6dd831e3b7c7b91)
++++ app/src/main/res/layout/activity_main.xml	(date 1601994886703)
+@@ -86,7 +86,7 @@
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerCanchas"
+         android:layout_width="wrap_content"
+-        android:layout_height="774dp"
++        android:layout_height="770dp"
+         android:layout_above="@+id/RecyclerView"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+@@ -94,7 +94,7 @@
+         android:layout_marginStart="10dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginEnd="11dp"
+-        android:layout_marginBottom="-27dp" />
++        android:layout_marginBottom="-23dp" />
+ 
+ 
+ </RelativeLayout>
+Index: app/src/main/java/cl/stomas/gol_proyect/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/cl/stomas/gol_proyect/MainActivity.java	(revision 078d7fc5d98535e0294d3f97a6dd831e3b7c7b91)
++++ app/src/main/java/cl/stomas/gol_proyect/MainActivity.java	(date 1601994886714)
+@@ -21,7 +21,6 @@
+     private RecyclerView recyclerViewCanchas;
+     private RecyclerViewAdaptador adaptadorCanchas;
+ 
+-
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+Index: app/src/main/java/cl/stomas/gol_proyect/RecyclerViewAdaptador.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/cl/stomas/gol_proyect/RecyclerViewAdaptador.java	(revision 078d7fc5d98535e0294d3f97a6dd831e3b7c7b91)
++++ app/src/main/java/cl/stomas/gol_proyect/RecyclerViewAdaptador.java	(date 1601994886729)
+@@ -40,7 +40,7 @@
+         ViewHolder viewHolder=new ViewHolder(view);
+         return viewHolder;
+     }
+-
++    
+     @Override
+     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+         holder.nombre.setText(ListaCanchas.get(position).getNombre());

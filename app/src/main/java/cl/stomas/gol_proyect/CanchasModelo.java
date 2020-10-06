@@ -15,6 +15,7 @@ public class CanchasModelo {
     }
 
 
+
     public String getNombre() {
         return nombre;
     }

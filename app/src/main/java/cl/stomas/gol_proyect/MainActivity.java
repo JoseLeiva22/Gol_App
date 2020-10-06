@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerViewCanchas;
     private RecyclerViewAdaptador adaptadorCanchas;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
