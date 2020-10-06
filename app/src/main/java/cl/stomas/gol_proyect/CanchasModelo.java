@@ -14,7 +14,6 @@ public class CanchasModelo {
         this.imgCancha = imgCancha;
     }
 
-
     public String getNombre() {
         return nombre;
     }

@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
         adaptadorCanchas= new RecyclerViewAdaptador(obtenerCanchas());
         recyclerViewCanchas.setAdapter(adaptadorCanchas);
-
     }
 
     public List<CanchasModelo> obtenerCanchas(){
