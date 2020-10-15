@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     //Cardview para a contener imagenes , texto y boton
+
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="209dp"
@@ -12,7 +14,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
-        app:cardBackgroundColor="#8BC34A">
+        app:cardBackgroundColor="#71be07">
 
 
         <ImageView
@@ -22,6 +24,7 @@
             android:scaleType="fitXY"
             app:srcCompat="@drawable/cancha" />
         //ImagenView para mostrar foto principal de canchas, mantener en Scaletype "fitXY
+
         <LinearLayout
             android:layout_width="284dp"
             android:layout_height="wrap_content"
@@ -37,7 +40,8 @@
                 android:text="TextView"
                 android:textColor="#ffe3e3e3"
                 android:textSize="18sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:text="@string/tv1"></TextView>
 
             <TextView
                 android:id="@+id/tvhorario"
@@ -50,7 +54,8 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
-    //LinearLayout para contener Boton de vista
+        //LinearLayout para contener Boton de vista
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="80dp"
@@ -63,11 +68,13 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
-                android:background="#73A33B"
+                android:background="#4d850c"
+                android:onClick="Ver"
                 android:text="Ver"
                 android:textColor="#FFFF"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="@string/BotonUno" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

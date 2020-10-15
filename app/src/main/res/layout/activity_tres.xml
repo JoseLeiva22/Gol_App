@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Activity_tres">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    //Este es el flipper que nos permitira deslizar las imagenes.
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="-65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <technolifestyle.com.imageslider.FlipperLayout
+        android:id="@+id/Flipper_detalles"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp">
+
+
+    </technolifestyle.com.imageslider.FlipperLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="382dp"
+            android:layout_below="@+id/Flipper_detalles"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="64dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nombre"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextPhone3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="Contacto"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Direccion"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Ciudad"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextTime3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:inputType="time"
+                android:text="Horario"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Precio"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+</RelativeLayout>

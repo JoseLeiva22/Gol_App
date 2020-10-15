@@ -20,23 +20,23 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
 
         public ViewHolder(View itemView) {
             super(itemView);
-            nombre=(TextView)itemView.findViewById(R.id.tvnombre);
+            nombre=(TextView) itemView.findViewById(R.id.tvnombre);
             horario=(TextView)itemView.findViewById(R.id.tvhorario);
             imgCancha= (ImageView) itemView.findViewById(R.id.tvcancha);
 
         }
     }
 
-    public List<CanchasModelo>ListaCanchas;
+    public List<Canchas_Modelo>ListaCanchas;
 
-    public RecyclerViewAdaptador(List<CanchasModelo> listaCanchas) {
+    public RecyclerViewAdaptador(List<Canchas_Modelo> listaCanchas) {
         ListaCanchas = listaCanchas;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.layoutcanchas,parent,false);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_vista_canchas,parent,false);
         ViewHolder viewHolder=new ViewHolder(view);
         return viewHolder;
     }

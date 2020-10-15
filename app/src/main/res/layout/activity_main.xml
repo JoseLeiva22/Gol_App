@@ -7,6 +7,22 @@
     tools:context=".MainActivity"
     android:background="@android:color/white">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        android:layout_above="@+id/RecyclerView"
+        android:layout_alignTop="@+id/recyclerCanchas"
+        android:layout_alignEnd="@+id/recyclerCanchas"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <RelativeLayout
         android:id="@+id/RecyclerView"
         android:layout_width="match_parent"
@@ -19,35 +35,39 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
-        android:background="@android:color/holo_green_light">
+        android:background="#71be07">
 
         <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="183dp"
-            android:layout_height="29dp"
+            android:id="@+id/fav_button"
+            android:layout_width="54dp"
+            android:layout_height="31dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="3dp"
+            android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="20dp"
-            android:layout_toEndOf="@+id/imageButton4"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="18dp"
+            android:layout_toEndOf="@+id/mapa_button"
             android:background="#0000"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/ic_baseline_stars_24" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="199dp"
-            android:layout_height="28dp"
+            android:id="@+id/mapa_button"
+            android:layout_width="198dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-1dp"
             android:background="#0000"
             android:foregroundGravity=""
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/ic_baseline_room_24" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView_mapa"
             android:layout_width="66dp"
             android:layout_height="19dp"
             android:layout_alignParentStart="true"
@@ -57,7 +77,6 @@
             android:layout_marginTop="31dp"
             android:layout_marginEnd="69dp"
             android:layout_marginBottom="0dp"
-            android:layout_toStartOf="@+id/imageButton3"
             android:gravity="bottom|center"
             android:text="Mapa"
             android:textColor="#FFFFFF"
@@ -65,17 +84,18 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="115dp"
-            android:layout_height="19dp"
-            android:layout_alignStart="@+id/imageButton3"
+            android:id="@+id/textView_fav"
+            android:layout_width="109dp"
+            android:layout_height="22dp"
+
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="42dp"
             android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/mapa_button"
             android:gravity="bottom|center"
             android:text="Favoritos"
             android:textColor="#FFFFFF"
@@ -86,7 +106,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCanchas"
         android:layout_width="wrap_content"
-        android:layout_height="770dp"
+        android:layout_height="782dp"
         android:layout_above="@+id/RecyclerView"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -94,7 +114,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="11dp"
-        android:layout_marginBottom="-23dp" />
+        android:layout_marginBottom="-35dp" />
 
 
 </RelativeLayout>
