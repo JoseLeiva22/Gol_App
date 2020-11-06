@@ -5,9 +5,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -17,7 +19,9 @@ import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
-    ImageButton imagenA, imagenB;
+    ImageButton btnMapa, btnFavoritos;
+
+     Button btn_mapa, btnfavor;
 
     private RecyclerView recyclerViewCanchas;
     private RecyclerViewAdaptador adaptadorCanchas;
@@ -28,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Click Navegation Barra inferior.
-        imagenA = (ImageButton) findViewById(R.id.mapa_button);
-        imagenB = (ImageButton) findViewById(R.id.fav_button);
+        btnMapa = (ImageButton) findViewById(R.id.btn_map);
+        btnFavoritos = (ImageButton) findViewById(R.id.fav_button);
 
-        imagenA.setOnClickListener(new View.OnClickListener() {
+        btnMapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplication(),"Mapa", Toast.LENGTH_SHORT).show();
@@ -39,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        imagenB.setOnClickListener(new View.OnClickListener() {
+        btnFavoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplication(),"Favoritos", Toast.LENGTH_SHORT).show();
@@ -53,7 +57,15 @@ public class MainActivity extends AppCompatActivity {
         adaptadorCanchas= new RecyclerViewAdaptador(obtenerCanchas());
         recyclerViewCanchas.setAdapter(adaptadorCanchas);
 
+        //metodo para ir al activity del mapa.
+        btnMapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =  new Intent(getApplicationContext(),Mapa.class);
+                startActivity(intent);
 
+            }
+        });
     }
 
     public List<Canchas_Modelo> obtenerCanchas(){
@@ -69,5 +81,11 @@ public class MainActivity extends AppCompatActivity {
     public void Ver(View view){
         Intent ver = new Intent(this,Activity_tres.class);
         startActivity(ver);
+    }
+    //Vista para ir al activity del mapa.
+    public void Map(View view){
+        Intent intent = new Intent(getApplicationContext(),Mapa.class);
+        startActivity(intent);
+
     }
 }

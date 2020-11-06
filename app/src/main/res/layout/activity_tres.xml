@@ -34,79 +34,133 @@
     </technolifestyle.com.imageslider.FlipperLayout>
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="382dp"
-            android:layout_below="@+id/Flipper_detalles"
+    <LinearLayout
+        android:layout_width="106dp"
+        android:layout_height="345dp"
+        android:layout_below="@+id/Flipper_detalles"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="3dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="fill_vertical"
+            android:text="Nombre"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="fill_vertical"
+            android:text="Direccion"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_alignParentStart="true"
+            android:gravity="fill_vertical"
+            android:text="Ciudad"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Contacto"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="fill_vertical"
+            android:text="Horario"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:gravity="fill_vertical"
+            android:text="Precio"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="261dp"
+        android:layout_height="344dp"
+        android:layout_below="@+id/Flipper_detalles"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-2dp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="-2dp"
-            android:layout_marginEnd="9dp"
-            android:layout_marginBottom="64dp"
-            android:orientation="vertical">
+            android:ems="10"
+            android:inputType="textPersonName" />
 
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/tv2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Nombre"
-                android:textStyle="italic" />
+        <EditText
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/editTextPhone3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:ems="10"
-                android:inputType="phone"
-                android:text="Contacto"
-                android:textStyle="italic" />
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="time" />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Direccion"
-                android:textStyle="italic" />
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="number" />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Ciudad"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/editTextTime3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:ems="10"
-                android:inputType="time"
-                android:text="Horario"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/editTextNumber"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Precio"
-                android:textStyle="italic" />
-
-        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
