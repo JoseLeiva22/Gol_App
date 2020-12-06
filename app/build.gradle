@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -39,6 +40,7 @@ dependencies {
     //libreria para carrusel de imagenes.
     implementation  'com.synnapps:carouselview:0.1.5'
     implementation 'com.github.therealshabi:AutoImageFlipper:v1.4.1'
+    implementation platform('com.google.firebase:firebase-bom:26.1.0')
 
 
 }

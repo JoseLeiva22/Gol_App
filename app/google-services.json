@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "547433637410",
+    "firebase_url": "https://cryptic-acrobat-294221.firebaseio.com",
+    "project_id": "cryptic-acrobat-294221",
+    "storage_bucket": "cryptic-acrobat-294221.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547433637410:android:4ef4a2ddf53354fcd84c7b",
+        "android_client_info": {
+          "package_name": "cl.stomas.gol_proyect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547433637410-kh1gv7q1vtukt77nutqardc6u4isj0ff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.stomas.gol_proyect",
+            "certificate_hash": "7c002b42aeaa033d1f979f0acbb4fa81ef9b0846"
+          }
+        },
+        {
+          "client_id": "547433637410-1ri0j0kqv4ud11375hs2m564ldfh9r7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5huReLJR6tek3Nea1AmljkfVaS3uKvkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547433637410-1ri0j0kqv4ud11375hs2m564ldfh9r7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,161 +6,184 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    //Este es el flipper que nos permitira deslizar las imagenes.
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="681dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="-65dp">
+        //Este es el flipper que nos permitira deslizar las imagenes.
+
+        <technolifestyle.com.imageslider.FlipperLayout
+            android:id="@+id/Flipper_detalles"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/TV_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#807E7E"
+                android:textSize="12sp" />
+        </technolifestyle.com.imageslider.FlipperLayout>
+
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:layout_width="105dp"
+            android:layout_height="278dp"
+            android:layout_below="@+id/Flipper_detalles"
 
-    <technolifestyle.com.imageslider.FlipperLayout
-        android:id="@+id/Flipper_detalles"
-        android:layout_width="match_parent"
-        android:layout_height="290dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="50dp">
-
-
-    </technolifestyle.com.imageslider.FlipperLayout>
-
-
-    <LinearLayout
-        android:layout_width="106dp"
-        android:layout_height="345dp"
-        android:layout_below="@+id/Flipper_detalles"
-
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="-2dp"
-        android:layout_marginEnd="-3dp"
-        android:layout_marginBottom="3dp"
-
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="fill_vertical"
-            android:text="Nombre"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:gravity="fill_vertical"
-            android:text="Direccion"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
             android:layout_alignParentStart="true"
-            android:gravity="fill_vertical"
-            android:text="Ciudad"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="3dp"
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center_vertical"
-            android:text="Contacto"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="fill_vertical"
-            android:text="Horario"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/nombre_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="Nombre"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_alignParentStart="true"
-            android:gravity="fill_vertical"
-            android:text="Precio"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
-        
-    </LinearLayout>
+            <TextView
+                android:id="@+id/direccion_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="Direccion"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
-    <LinearLayout
-        android:layout_width="261dp"
-        android:layout_height="344dp"
-        android:layout_below="@+id/Flipper_detalles"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginTop="-2dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="-2dp"
-        android:gravity="end"
-        android:orientation="vertical">
+            <TextView
+                android:id="@+id/ciudad_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:gravity="fill_vertical"
+                android:text="Ciudad"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/region_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="Region"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            <TextView
+                android:id="@+id/contacto_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="Contacto"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/horario_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="Horario"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/precio_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:gravity="fill_vertical"
+                android:text="Precio"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="269dp"
+            android:layout_height="278dp"
+            android:layout_below="@+id/Flipper_detalles"
             android:layout_alignParentEnd="true"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            android:layout_marginStart="-3dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="-2dp"
+            android:gravity="end"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/TV_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName6"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/TV_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextTime"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:ems="10"
-            android:inputType="time" />
+            <TextView
+                android:id="@+id/TV_ciudad"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
-        <EditText
-            android:id="@+id/editTextNumber"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="number" />
+            <TextView
+                android:id="@+id/TV_region"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/TV_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/TV_horario"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TV_precio"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
 </RelativeLayout>

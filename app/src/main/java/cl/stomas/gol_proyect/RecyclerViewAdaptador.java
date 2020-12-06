@@ -1,56 +1,77 @@
 package cl.stomas.gol_proyect;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdaptador.ViewHolder>
-{
-    public static class ViewHolder extends RecyclerView.ViewHolder
-    {
-        private TextView nombre,horario;
-        ImageView imgCancha;
+import cl.stomas.gol_proyect.Entidades.Canchas_Model;
 
-        public ViewHolder(View itemView) {
-            super(itemView);
-            nombre=(TextView) itemView.findViewById(R.id.tvnombre);
-            horario=(TextView)itemView.findViewById(R.id.tvhorario);
-            imgCancha= (ImageView) itemView.findViewById(R.id.tvcancha);
+public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdaptador.Vista_Canchas>{
 
-        }
-    }
 
-    public List<Canchas_Modelo>ListaCanchas;
+    private  Context context;
+    private ArrayList<Canchas_Model>canchasModels;
 
-    public RecyclerViewAdaptador(List<Canchas_Modelo> listaCanchas) {
-        ListaCanchas = listaCanchas;
+    Button ver;
+
+    public RecyclerViewAdaptador(Context context,ArrayList<Canchas_Model> canchasModels) {
+        this.context = context;
+        this.canchasModels= canchasModels;
+
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_vista_canchas,parent,false);
-        ViewHolder viewHolder=new ViewHolder(view);
-        return viewHolder;
+    public Vista_Canchas onCreateViewHolder( ViewGroup viewGroup, int viewType) {
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_main,viewGroup,false);
+        return new Vista_Canchas(view);
+
+
+
     }
 
-
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.nombre.setText(ListaCanchas.get(position).getNombre());
-        holder.horario.setText(ListaCanchas.get(position).getHorario());
-        holder.imgCancha.setImageResource(ListaCanchas.get(position).getImgCancha());
+    public void onBindViewHolder( Vista_Canchas vista_canchas, int position) {
+        Canchas_Model canchas_model= canchasModels.get(position);
+        vista_canchas.id_cancha.setText(canchas_model.getId_cancha());
+        vista_canchas.tv__nombre.setText(canchas_model.getNombre_can());
+        vista_canchas.tv__direccion.setText(canchas_model.getDirecion());
+        vista_canchas.tv__ciudad.setText(canchas_model.getCiudad());
+        vista_canchas.tv__region.setText(canchas_model.getRegion());
+        vista_canchas.tv__horario.setText(canchas_model.getHorario());
+        vista_canchas.tv__precio.setText(canchas_model.getPrecio());
+
     }
 
     @Override
     public int getItemCount() {
-        return ListaCanchas.size();
+        return canchasModels.size();
     }
+
+
+
+    public class Vista_Canchas extends RecyclerView.ViewHolder{
+        private TextView id_cancha, tv__nombre, tv__direccion, tv__ciudad, tv__region, tv__contacto, tv__horario, tv__precio;
+        private ImageView foto;
+        public Vista_Canchas(@NonNull View itemView) {
+            super(itemView);
+
+            id_cancha = itemView.findViewById(R.id.ID_);
+            tv__nombre = itemView.findViewById(R.id.tvnombre);
+            tv__horario = itemView.findViewById(R.id.tvhorario);
+            foto = itemView.findViewById(R.id.tvcancha);
+        }
+    }
+
+
 }

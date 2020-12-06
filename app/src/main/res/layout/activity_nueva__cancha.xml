@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nueva_Cancha">
+
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="280dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/IV_subir_imagen"
+            android:layout_width="109dp"
+            android:layout_height="109dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="109dp"
+            android:layout_marginTop="109dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginBottom="109dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24" />
+
+        <TextView
+            android:id="@+id/Id__"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="378dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombre_"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="fill_vertical"
+                android:text="Nombre"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/direccion_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="Direccion"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/ciudad_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:gravity="bottom|fill_vertical"
+                android:text="Ciudad"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="Region"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/contacto_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="Contacto"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/horario_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="fill_vertical"
+                android:text="Horario"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/precio_"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:gravity="fill_vertical"
+                android:text="Precio"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="283dp"
+            android:layout_height="377dp"
+            android:layout_gravity="bottom|fill_horizontal"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom|top"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EDT_NOMBRE"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="fill_vertical"
+                android:inputType="textPersonName"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/EDT_DIRECCION"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/EDT_CIUDAD"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/EDT_REGION"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/EDT_CONTACTO"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/EDT_HORARIO"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/EDT_PRECIO"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btn_registrar_cancha"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Registrar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
