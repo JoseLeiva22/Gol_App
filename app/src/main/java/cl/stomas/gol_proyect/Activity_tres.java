@@ -67,7 +67,7 @@ public class Activity_tres extends AppCompatActivity {
 
     }
 
-    /*private void Mostrar_Detalles() {
+    private void Mostrar_Detalles() {
 
         String selectQuery = "Select * from CREATE_TABLA_CANCHAS";
         SQLiteDatabase bd = conexionSQLiteHelper.getWritableDatabase();
@@ -87,7 +87,7 @@ public class Activity_tres extends AppCompatActivity {
             canchas_model.add(canchas_model);
         }
 
-    }*/
+    }
 
 }
 
